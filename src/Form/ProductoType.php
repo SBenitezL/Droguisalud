@@ -14,14 +14,14 @@ class ProductoType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('prd_nombre')
-            ->add('prd_unidad')
-            ->add('prd_precio')
-            ->add('prd_precio_unitario')
-            ->add('prd_costo')
-            ->add('prd_iva')
-            ->add('prd_cantidad')
-            ->add('prov_codigo', EntityType::class, ['class' => Proveedor::class, 'choice_label' => 'prov_nombre',])
+            ->add('prd_nombre', null,['label' => 'Nombre', ])
+            ->add('prd_unidad', null, ['label' => 'Unidad', ])
+            ->add('prd_precio', null, ['label' => 'Precio', ])
+            ->add('prd_precio_unitario', null, ['label' => 'Precio Unitario', ])
+            ->add('prd_costo', null, ['label' => 'Costo', ])
+            ->add('prd_iva', null, ['label' => 'IVA %', ])
+            ->add('prd_cantidad', null, ['label' => 'Cantidad', ])
+            ->add('prov_codigo', EntityType::class, ['class' => Proveedor::class, 'choice_label' => 'prov_nombre', 'label'=>'Proveedor'])
         ;
     }
 

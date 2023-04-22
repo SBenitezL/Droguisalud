@@ -1,11 +1,17 @@
 {% extends 'base.html.twig' %}
-
-{% block title %}New Producto{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('CSS/styles_new_producto.css') }}">
+{% endblock %}
+{% block title %}Nuevo Producto{% endblock %}
 
 {% block body %}
-    <h1>Create new Producto</h1>
+    <div class ="form-container">
+        <h1 class ="titulo">Nuevo Producto</h1>
 
-    {{ include('producto/_form.html.twig') }}
-
-    <a href="{{ path('app_producto_index') }}">back to list</a>
+        {{ include('producto/_form.html.twig') }}
+        <div class = "btn-container">
+            <a href="{{ path('app_producto_index') }}" class = "btn-view">back to list</a>
+        </div>
+    </div>
 {% endblock %}
