@@ -8,6 +8,9 @@
 /var/
 /vendor/
 .env
+composer.json
+composer.lock
+.env
 ###< symfony/framework-bundle ###
 
 ###> phpunit/phpunit ###
