@@ -39,8 +39,8 @@ body{
     padding: 8px;
     border: 1px solid #dee2e685;
     font-weight: 600;
-    text-align: left;
-    width: max-content;
+    text-align: center;
+    width: 120px;
 }
 #producto div input{
     text-align: right;
