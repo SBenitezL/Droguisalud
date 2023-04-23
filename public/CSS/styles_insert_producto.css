@@ -105,6 +105,9 @@ nav .btn-create:hover{
     opacity: 1;
     border-radius: 10px;
 }
+.table tbody tr td .btn:hover{
+    background-color: #b3ff24;
+}
 @media screen and (max-width: 768px)
 {
     .table thead{
