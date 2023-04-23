@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #32312f;
+    background-image: linear-gradient(to bottom, #f2f2f2b2, #ffffff);
     font-family: 'Arsenal', sans-serif;
 }
 nav {
