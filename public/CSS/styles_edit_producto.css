@@ -7,6 +7,7 @@
 body{
     background-image: linear-gradient(to bottom, #f2f2f2b2, #ffffff);
     font-family: 'Arsenal', sans-serif;
+    height: 100%;
 }
 nav {
     background-image: linear-gradient(to right, #003366, #838282b2);
@@ -15,9 +16,13 @@ nav {
     align-items: center;
     padding: 10px;
     position: fixed;
+    justify-content: space-between;
     top: 0;
     left: 0;
     right: 0;
+}
+#izquierda{
+    display: flex;
 }
 nav a{
     color: #fff;
@@ -38,7 +43,7 @@ nav a{
     font-size: 40px;
     text-align: center;
     color: #003366;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 40px;
 }
 #producto{
@@ -78,6 +83,7 @@ form{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-bottom: 20;
 }
 
 .btn{
@@ -85,7 +91,7 @@ form{
     text-decoration: none;
     line-height: 35px;
     display: inline-block;
-    background-color: #9ace39;
+    background-color: #658a22;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 20px;
@@ -100,25 +106,7 @@ form{
     cursor: pointer;
     border-radius: 10px;
 }
-.btn-view{
-    width: 80px;
-    text-decoration: none;
-    line-height: 25px;
-    display: inline-block;
-    background-color: #9ace39;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-weight: medium;
-    color:#FFFFFF;
-    text-align: center;
-    user-select: none;
-    border: 1px solid transparent;
-    font-size: 14px;
-    opacity: 1;
-    cursor: pointer;
-}
+
 .btn-container{
     display: flex;
     justify-content: center;

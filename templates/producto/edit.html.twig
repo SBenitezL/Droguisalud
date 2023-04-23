@@ -8,20 +8,19 @@
 {% block title %}Edit Producto{% endblock %}
 
 {% block body %}
-    <nav clas = "navbar">
-        <a href="{{ path('app_producto_index') }}">
-            <i class='bx bx-arrow-back'></i>
-            <span>Back</span>
-        </a>
-         <div class="navbar-brand">Droguisalud</div>
-    </nav>
-
-     <div class="container">
-        <h1 class = "titulo">Editar producto</h1>
-        {{ include('producto/_form.html.twig', {'button_label': 'Update'}) }}
+    <nav class = "navbar">
+        <div id="izquierda">
+            <a href="{{ path('app_producto_index') }}">
+                    <i class='bx bx-arrow-back'></i>
+                    <span>Back</span>
+            </a>  
+            <div class="navbar-brand">Droguisalud</div>
+        </div>
         {{ include('producto/_delete_form.html.twig') }}
-        
+    </nav>
+    <div class="container">
+        <h1 class = "titulo">Editar producto</h1>
+        {{ include('producto/_form.html.twig', {'button_label': 'Actualizar'}) }}
     </div>
-
     
 {% endblock %}

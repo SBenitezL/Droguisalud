@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Courgette&family=Hind:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Commissioner:wght@300&family=Jost:ital,wght@1,300&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
 }
 body{
     background-image: linear-gradient(to bottom, #f2f2f2b2, #ffffff);
-    font-family: 'Arsenal', sans-serif;
+    font-family: 'Commissioner', sans-serif;
 }
 nav {
     background-image: linear-gradient(to right, #003366, #838282b2);
@@ -80,8 +80,9 @@ nav .btn-create:hover{
 .table tbody tr td{
     font-size: 15px;
     letter-spacing: 0.35px;
-    font-weight: 500;
-    color: #0f0f0f;
+    font-weight: 580;
+    font-size: 18px;
+    color: #000000;
     background-color: #bfcbe2;
     padding: 8px;
     text-align: center;
@@ -92,7 +93,7 @@ nav .btn-create:hover{
     text-decoration: none;
     line-height: 25px;
     display: inline-block;
-    background-color: #9ace39;
+    background-color: #658a22;
     margin-top: 5px;
     margin-bottom: 5px;
     font-weight: medium;

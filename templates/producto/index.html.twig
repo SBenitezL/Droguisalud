@@ -2,6 +2,7 @@
 
 {% block stylesheets %}
     {{ parent() }}
+    <link rel="shortcut icon" href="src/Icons/icon.png">
     <link rel="stylesheet" href="{{ asset('CSS/styles_insert_producto.css') }}">
 {% endblock %}
 
@@ -10,7 +11,7 @@
 {% block body %}
     <nav clas = "navbar">
         <div class="navbar-brand">Droguisalud</div>
-        <a href="{{ path('app_producto_new') }}" class ="btn-create">Create new</a> 
+        <a href="{{ path('app_producto_new') }}" class ="btn-create">Crear producto</a> 
     </nav>
     <div class="table-container">
         <div class="table-title">
@@ -26,7 +27,7 @@
                         <th>Costo</th>
                         <th>IVA %</th>
                         <th>Cantidad</th>
-                        <th class ="ultimo">Actions</th>
+                        <th class ="ultimo">Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -41,8 +42,8 @@
                         <td data-label="IVA">{{ producto.prdIva }}</td>
                         <td data-label="Cantidad">{{ producto.prdCantidad }}</td>
                         <td>
-                            <a href="{{ path('app_producto_show', {'id': producto.id}) }}" class ="btn">show</a>
-                            <a href="{{ path('app_producto_edit', {'id': producto.id}) }}" class = "btn">edit</a>
+                            <a href="{{ path('app_producto_show', {'id': producto.id}) }}" class ="btn">Visualizar</a>
+                            <a href="{{ path('app_producto_edit', {'id': producto.id}) }}" class = "btn">Editar</a>
                         </td>
                     </tr>
                 {% else %}
