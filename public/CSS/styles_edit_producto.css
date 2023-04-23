@@ -61,12 +61,12 @@ nav a{
     border: 1px solid #dee2e685;
     font-weight: 600;
     text-align: center;
-    width: 120px;
+    width: 25%;
 }
 #producto div input{
-    text-align: right;
-    padding-left: 50%;
     position: relative;
+    width: 55%;
+    padding: 10px;
 }
 form{
     display: flex;
@@ -92,6 +92,7 @@ form{
     border: 1px solid transparent;
     font-size: 14px;
     opacity: 1;
+    cursor: pointer;
 }
 .btn-view{
     width: 80px;
@@ -110,9 +111,13 @@ form{
     border: 1px solid transparent;
     font-size: 14px;
     opacity: 1;
+    cursor: pointer;
 }
 .btn-container{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+select{
+    cursor: pointer;
 }

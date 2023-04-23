@@ -61,12 +61,11 @@ nav a{
     border: 1px solid #dee2e685;
     font-weight: 600;
     text-align: center;
-    width: 120px;
+    width: 25%;
 }
 #producto div input{
-    text-align: right;
-    padding-left: 50%;
     position: relative;
+    width: 55%;
 }
 form{
     display: flex;
