@@ -37,7 +37,7 @@ nav a{
 .titulo{
     font-size: 40px;
     text-align: center;
-    color: #630707a9;
+    color: #003366;
     margin-top: 20px;
     margin-bottom: 40px;
 }
@@ -85,7 +85,7 @@ form{
     text-decoration: none;
     line-height: 35px;
     display: inline-block;
-    background-color: #838282b2;
+    background-color: #9ace39;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 20px;
@@ -105,7 +105,7 @@ form{
     text-decoration: none;
     line-height: 25px;
     display: inline-block;
-    background-color: #838282b2;
+    background-color: #9ace39;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 20px;
