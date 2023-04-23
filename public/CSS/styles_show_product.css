@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Courgette&family=Hind:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +6,27 @@
 }
 body{
     background-color: #32312f;
-    font-family: sans-serif;
+    font-family: 'Arsenal', sans-serif;
+}
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+}
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 60px;
 }
 .table-container{
     padding: 0 10%;
@@ -22,7 +43,7 @@ body{
     border-collapse: collapse;
 }
 .table thead{
-    background-color: #ee2828;
+    background-color: #FF1046;
 }
 .table thead tr th{
     font-size: 14px;
