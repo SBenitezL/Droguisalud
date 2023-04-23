@@ -119,7 +119,6 @@ class Producto
     {
         return $this->prd_cantidad;
     }
-
     public function setPrdCantidad(int $prd_cantidad): self
     {
         $this->prd_cantidad = $prd_cantidad;
@@ -131,7 +130,10 @@ class Producto
     {
         return $this->prov_codigo;
     }
-
+    public function getProvName(): ?string
+    {
+        return $this->prov_codigo->getProvNombre();
+    }
     public function setProvCodigo(Proveedor $prov_codigo): self
     {
         $this->prov_codigo = $prov_codigo;
