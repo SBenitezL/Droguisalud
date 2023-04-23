@@ -1,17 +1,22 @@
 {% extends 'base.html.twig' %}
 {% block stylesheets %}
     {{ parent() }}
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="{{ asset('CSS/styles_new_producto.css') }}">
 {% endblock %}
 {% block title %}Nuevo Producto{% endblock %}
 
 {% block body %}
+    <nav clas = "navbar">
+        <a href="{{ path('app_producto_index') }}">
+            <i class='bx bx-arrow-back'></i>
+            <span>Back</span>
+        </a>
+         <div class="navbar-brand">Droguisalud</div>
+    </nav>
     <div class ="form-container">
         <h1 class ="titulo">Nuevo Producto</h1>
 
         {{ include('producto/_form.html.twig') }}
-        <div class = "btn-container">
-            <a href="{{ path('app_producto_index') }}" class = "btn-view">back to list</a>
-        </div>
     </div>
 {% endblock %}
