@@ -11,6 +11,10 @@
 {% block body %}
     <nav clas = "navbar">
         <div class="navbar-brand">Droguisalud</div>
+        <div class="buscar">
+            <input type="text" id="busqueda" name = "busqueda"  required placeholder = "Buscar">
+            <input type="submit" value = "enviar">
+        </div>
         <a href="{{ path('app_producto_new') }}" class ="btn-create">Crear producto</a> 
     </nav>
     <div class="table-container">
