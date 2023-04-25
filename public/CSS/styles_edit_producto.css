@@ -85,7 +85,6 @@ form{
     align-items: center;
     border-bottom: 20;
 }
-
 .btn{
     width: 80px;
     text-decoration: none;
@@ -106,7 +105,9 @@ form{
     cursor: pointer;
     border-radius: 10px;
 }
-
+.btn:hover{
+    background-color: #b3ff24;
+}
 .btn-container{
     display: flex;
     justify-content: center;
