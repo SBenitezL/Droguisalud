@@ -34,7 +34,7 @@ class Producto
     #[ORM\Column]
     private ?int $prd_cantidad = null;
 
-    #[ORM\OneToOne(cascade: ['persist', 'remove'])]
+    #[ORM\ManyToOne(cascade: ['persist', 'remove'])]
     #[ORM\JoinColumn(nullable: false)]
     private ?Proveedor $prov_codigo = null;
 
